@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>Lunar Ray - Common - Event</name>
+	<description>
+		Simple event bus.
+	</description>
+
+	<artifactId>event</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>org.lunarray.common</groupId>
+		<artifactId>parent</artifactId>
+		<version>1-SNAPSHOT</version>
+	</parent>
+
+	<scm>
+		<connection>scm:git:ssh://git@github.com/lunarray-org/common-event.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/lunarray-org/common-event.git</developerConnection>
+		<url>https://github.com/lunarray-org/common-event</url>
+	</scm>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<artifactId>bom</artifactId>
+				<groupId>org.lunarray.common</groupId>
+				<version>1.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<artifactId>bom</artifactId>
+			<groupId>org.lunarray.common</groupId>
+			<version>1.0-SNAPSHOT</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<artifactId>base</artifactId>
+			<groupId>org.lunarray.common</groupId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+		</dependency>
+	</dependencies>
+</project>
